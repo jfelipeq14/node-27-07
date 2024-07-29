@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <form id="form">
+      <div>
+        <label for="codigo_reserva">Codigo Reserva</label>
+        <input type="number" id="codigo_reserva" required />
+      </div>
+
+      <div>
+        <label for="nombre_cabana">Nombre Cabaña</label>
+        <input type="text" id="nombre_cabana" required />
+      </div>
+      <div>
+        <label for="fecha_inicio">Fecha Inicio</label>
+        <input type="date" id="fecha_inicio" required />
+      </div>
+
+      <div>
+        <label for="fecha_fin">Fecha Fin</label>
+        <input type="date" id="fecha_fin" required />
+      </div>
+
+      <div>
+        <label for="cantidad_dias">Cantidad Dias</label>
+        <input type="number" id="cantidad_dias" readonly />
+      </div>
+
+      <div>
+        <label for="alimentacion">Alimentacion</label>
+        <div>
+          Si:
+          <input
+            type="radio"
+            name="alimentacion"
+            id="alimentacion"
+            value="si"
+            checked
+          />
+          No:
+          <input
+            type="radio"
+            name="alimentacion"
+            id="alimentacion"
+            value="no"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="precio_por_dia">Precio por Dia</label>
+        <input type="number" id="precio_por_dia" value="100000" readonly />
+      </div>
+
+      <div>
+        <label for="precio_total">Precio Total</label>
+        <input type="number" id="precio_total" readonly />
+      </div>
+
+      <input type="submit" value="Calcular" />
+    </form>
+    <script src="/js/validate.js"></script>
+  </body>
+</html>
